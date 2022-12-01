@@ -1,0 +1,13 @@
+list_3d = [[[1,2],'a',[2,'cat'],[3,4], [5,6], [7,8]]]
+
+def flatten_3d(input_list: list) -> list:
+    flattened = []
+    
+    for sublist in input_list:
+        for sublist2 in sublist:
+            for element in sublist2:
+                flattened.append(element)
+
+    return flattened
+    
+print(flatten_3d(list_3d))
